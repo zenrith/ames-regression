@@ -1,0 +1,21 @@
+# experimentation
+numpy
+matplotlib
+seaborn
+scipy
+scikit-learn
+feature-engine
+xgboost
+lightgbm
+optuna
+# notebook
+python-dateutil # jupyterlab can't start without this for some reason
+ipykernel
+ipywidgets
+# automation
+tox
+# testing
+pytest
+# validation
+pydantic
+strictyaml
