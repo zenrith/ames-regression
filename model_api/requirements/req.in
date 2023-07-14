@@ -1,0 +1,13 @@
+uvicorn
+fastapi
+python-multipart
+pydantic
+pydantic-settings
+typing_extensions
+loguru
+pytest
+requests
+httpx
+pandas
+numpy
+tox
