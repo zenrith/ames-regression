@@ -1,0 +1,13 @@
+__pycache__
+.mypy_cache
+.tox
+.pytest_cache
+ames_model.egg-info
+ames_model_output*
+build
+dist
+steps.txt
+data
+archive
+.ipynb_checkpoints
+kaggle*
