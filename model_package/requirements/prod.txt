@@ -8,6 +8,14 @@ annotated-types==0.5.0
     # via
     #   -c requirements\dev.txt
     #   pydantic
+build==0.10.0
+    # via
+    #   -c requirements\dev.txt
+    #   -r requirements/prod.in
+colorama==0.4.6
+    # via
+    #   -c requirements\dev.txt
+    #   build
 feature-engine==1.6.1
     # via
     #   -c requirements\dev.txt
@@ -35,6 +43,7 @@ numpy==1.25.1
 packaging==23.1
     # via
     #   -c requirements\dev.txt
+    #   build
     #   statsmodels
 pandas==2.0.3
     # via
@@ -54,6 +63,10 @@ pydantic-core==2.1.2
     # via
     #   -c requirements\dev.txt
     #   pydantic
+pyproject-hooks==1.0.0
+    # via
+    #   -c requirements\dev.txt
+    #   build
 python-dateutil==2.8.2
     # via
     #   -c requirements\dev.txt
