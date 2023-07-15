@@ -16,3 +16,8 @@ pip-sync requirements/req.txt # install environment for developing
 ```bash
 tox
 ```
+5) The service can also be locally deployed via docker. Install [docker](https://www.docker.com/). Build a docker image
+```bash
+docker build -t ames-api:latest . # the period here is not a typo!
+```
+6) Open up the docker dashboard and run the ames-api image to access the API via docker.

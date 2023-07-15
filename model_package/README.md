@@ -16,3 +16,4 @@ pip-sync requirements/dev.txt # install environment for developing
 ```bash
 tox
 ```
+5) The package has been built and published to pypi, which is how the I managed to import the model in the model_api section
