@@ -1,4 +1,4 @@
-name: ames-regression
+name: ames-package
 channels:
   - conda-forge
   - defaults

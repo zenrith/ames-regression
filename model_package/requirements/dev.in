@@ -1,23 +1,15 @@
-# experimentation
-numpy
-matplotlib
-seaborn
-scipy
-scikit-learn
-feature-engine
-xgboost
-lightgbm
-optuna
-# notebook
-python-dateutil # jupyterlab can't start without this for some reason
-ipykernel
-ipywidgets
+# dependencies from model_development
+numpy==1.25.1
+scikit-learn==1.3.0
+feature-engine==1.6.1
+lightgbm==3.3.5
 # automation
-tox
+tox==4.6.4
 # testing
-pytest
+pytest==7.4.0
 # validation
-pydantic
-strictyaml
-build
-twine
+pydantic==2.0.2
+strictyaml==1.7.3
+# packaging
+build==0.10.0
+twine==4.0.2

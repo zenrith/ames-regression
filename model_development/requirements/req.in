@@ -1,0 +1,14 @@
+# experimentation
+numpy==1.25.1
+matplotlib==3.7.2
+seaborn==0.12.2
+scipy==1.11.1
+scikit-learn==1.3.0
+feature-engine==1.6.1
+xgboost==1.7.6
+lightgbm==3.3.5
+optuna==3.2.0
+# notebook
+python-dateutil==2.8.2 # jupyterlab can't start without this for some reason
+ipykernel==6.24.0
+ipywidgets==8.0.7
