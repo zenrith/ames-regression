@@ -168,8 +168,8 @@ python-dateutil==2.8.2
     #   strictyaml
 pytz==2023.3
     # via pandas
-pywin32==306
-    # via jupyter-core
+# pywin32==306
+#     # via jupyter-core
 pyyaml==6.0
     # via optuna
 pyzmq==25.1.0
