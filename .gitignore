@@ -7,7 +7,11 @@ ames_model_output*
 build
 dist
 steps.txt
-data
+train.csv
+test.csv
+sample_submission.csv
+data_description.txt
+types.csv
 archive
 .ipynb_checkpoints
 kaggle*
