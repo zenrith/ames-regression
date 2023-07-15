@@ -53,7 +53,6 @@ jobs:
             tox -e fetch_data
       - run:
           name: Train and Test the model
-          no_output_timeout: 20m
           command: |
             tox -e test_package
       # - run:
