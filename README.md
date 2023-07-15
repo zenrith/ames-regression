@@ -11,5 +11,5 @@ Each folder has their respective README files to guide users who are interested 
 Here is a glimpse of what the project's outcome is like:
 
 <p align="center">
-    <img src="sample_usecase.gif" width="50%">
+    <img src="sample_usecase.gif">
 </p>
