@@ -52,9 +52,13 @@ jobs:
           command: |
             tox -e fetch_data
       - run:
-          name: Test the model
+          name: Train and Test the model
           command: |
             tox
+      - run:
+          name: Build the package
+          command: |
+            python -m build
       # - run:
       #     name: Publish model to Gemfury
       #     command: |
@@ -71,6 +75,5 @@ workflows:
   version: 2
   deploy_pipeline:  
     jobs:
+      - test_regression_model
       - test_app
-      - test_regression_model:
-          <<: *tags_only
