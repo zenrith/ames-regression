@@ -51,10 +51,10 @@ jobs:
           name: Fetch the data
           command: |
             tox -e fetch_data
-      # - run:
-      #     name: Train and Test the model
-      #     command: |
-      #       tox
+      - run:
+          name: Train and Test the model
+          command: |
+            tox -e test_package
       # - run:
       #     name: Build the package
       #     command: |
