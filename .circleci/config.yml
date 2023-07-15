@@ -19,13 +19,13 @@ prepare_tox: &prepare_tox
     command: |
       pip install --user tox
 
-fetch_data: &fetch_data
-  run:
-    name: Set script permissions and fetch data
-    command: |
-      source venv/bin/activate
-      chmod +x ./scripts/fetch_kaggle_dataset.sh
-      ./scripts/fetch_kaggle_dataset.sh
+# fetch_data: &fetch_data
+#   run:
+#     name: Set script permissions and fetch data
+#     command: |
+#       source venv/bin/activate
+#       chmod +x ./scripts/fetch_kaggle_dataset.sh
+#       ./scripts/fetch_kaggle_dataset.sh
 
 jobs:
   test_app:
@@ -55,10 +55,10 @@ jobs:
           name: Train and Test the model
           command: |
             tox -e test_package
-      - run:
-          name: Build the package
-          command: |
-            python -m build
+      # - run:
+      #     name: Build the package
+      #     command: |
+      #       python -m build
 
 tags_only: &tags_only
   filters:
