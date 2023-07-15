@@ -72,7 +72,5 @@ workflows:
   deploy_pipeline:  
     jobs:
       - test_regression_model
-      - test_app:
-          requires:
-            - test_regression_model
+      - test_app
         
