@@ -55,10 +55,10 @@ jobs:
           name: Train and Test the model
           command: |
             tox -e test_package
-      # - run:
-      #     name: Build the package
-      #     command: |
-      #       python -m build
+      - run:
+          name: Build the package
+          command: |
+            python -m build
 
 tags_only: &tags_only
   filters:
@@ -72,7 +72,7 @@ workflows:
   deploy_pipeline:  
     jobs:
       - test_regression_model
-      # - test_app:
-      #     requires:
-      #       - test_regression_model
+      - test_app:
+          requires:
+            - test_regression_model
         
