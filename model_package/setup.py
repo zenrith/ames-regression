@@ -23,6 +23,7 @@ setup(
     description=DESCRIPTION,
     long_description=DESCRIPTION,
     long_description_content_type="text/markdown",
+    python_requires=REQUIRES_PYTHON,
     packages=find_packages(exclude=("tests",)),
     package_data={"ames_model": ["VERSION"]},
     install_requires=list_reqs(),
