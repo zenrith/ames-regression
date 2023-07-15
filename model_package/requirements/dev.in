@@ -20,3 +20,4 @@ pytest
 pydantic
 strictyaml
 build
+twine

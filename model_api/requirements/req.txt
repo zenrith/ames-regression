@@ -4,12 +4,18 @@
 #
 #    pip-compile requirements/req.in
 #
+ames-model==0.0.1
+    # via -r requirements/req.in
 annotated-types==0.5.0
-    # via pydantic
+    # via
+    #   ames-model
+    #   pydantic
 anyio==3.7.1
     # via
     #   httpcore
     #   starlette
+build==0.10.0
+    # via ames-model
 cachetools==5.3.1
     # via tox
 certifi==2023.5.7
@@ -25,6 +31,8 @@ click==8.1.4
     # via uvicorn
 colorama==0.4.6
     # via
+    #   ames-model
+    #   build
     #   click
     #   loguru
     #   pytest
@@ -33,6 +41,8 @@ distlib==0.3.6
     # via virtualenv
 fastapi==0.100.0
     # via -r requirements/req.in
+feature-engine==1.6.1
+    # via ames-model
 filelock==3.12.2
     # via
     #   tox
@@ -52,19 +62,43 @@ idna==3.4
     #   requests
 iniconfig==2.0.0
     # via pytest
+joblib==1.3.1
+    # via
+    #   ames-model
+    #   scikit-learn
+lightgbm==3.3.5
+    # via ames-model
 loguru==0.7.0
     # via -r requirements/req.in
 numpy==1.25.1
     # via
     #   -r requirements/req.in
+    #   ames-model
+    #   feature-engine
+    #   lightgbm
     #   pandas
+    #   patsy
+    #   scikit-learn
+    #   scipy
+    #   statsmodels
 packaging==23.1
     # via
+    #   ames-model
+    #   build
     #   pyproject-api
     #   pytest
+    #   statsmodels
     #   tox
 pandas==2.0.3
-    # via -r requirements/req.in
+    # via
+    #   -r requirements/req.in
+    #   ames-model
+    #   feature-engine
+    #   statsmodels
+patsy==0.5.3
+    # via
+    #   ames-model
+    #   statsmodels
 platformdirs==3.8.1
     # via
     #   tox
@@ -76,28 +110,55 @@ pluggy==1.2.0
 pydantic==2.0.2
     # via
     #   -r requirements/req.in
+    #   ames-model
     #   fastapi
     #   pydantic-settings
 pydantic-core==2.1.2
-    # via pydantic
+    # via
+    #   ames-model
+    #   pydantic
 pydantic-settings==2.0.1
     # via -r requirements/req.in
 pyproject-api==1.5.3
     # via tox
+pyproject-hooks==1.0.0
+    # via
+    #   ames-model
+    #   build
 pytest==7.4.0
     # via -r requirements/req.in
 python-dateutil==2.8.2
-    # via pandas
+    # via
+    #   ames-model
+    #   pandas
+    #   strictyaml
 python-dotenv==1.0.0
     # via pydantic-settings
 python-multipart==0.0.6
     # via -r requirements/req.in
 pytz==2023.3
-    # via pandas
+    # via
+    #   ames-model
+    #   pandas
 requests==2.31.0
     # via -r requirements/req.in
+scikit-learn==1.3.0
+    # via
+    #   ames-model
+    #   feature-engine
+    #   lightgbm
+scipy==1.11.1
+    # via
+    #   ames-model
+    #   feature-engine
+    #   lightgbm
+    #   scikit-learn
+    #   statsmodels
 six==1.16.0
-    # via python-dateutil
+    # via
+    #   ames-model
+    #   patsy
+    #   python-dateutil
 sniffio==1.3.0
     # via
     #   anyio
@@ -105,23 +166,38 @@ sniffio==1.3.0
     #   httpx
 starlette==0.27.0
     # via fastapi
+statsmodels==0.14.0
+    # via
+    #   ames-model
+    #   feature-engine
+strictyaml==1.7.3
+    # via ames-model
+threadpoolctl==3.1.0
+    # via
+    #   ames-model
+    #   scikit-learn
 tox==4.6.4
     # via -r requirements/req.in
 typing-extensions==4.7.1
     # via
     #   -r requirements/req.in
+    #   ames-model
     #   fastapi
     #   pydantic
     #   pydantic-core
 tzdata==2023.3
-    # via pandas
+    # via
+    #   ames-model
+    #   pandas
 urllib3==2.0.3
     # via requests
 uvicorn==0.22.0
     # via -r requirements/req.in
 virtualenv==20.23.1
     # via tox
+wheel==0.40.0
+    # via
+    #   ames-model
+    #   lightgbm
 win32-setctime==1.1.0
     # via loguru
-    
-../model_package/.

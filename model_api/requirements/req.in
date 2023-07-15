@@ -11,3 +11,4 @@ httpx
 pandas
 numpy
 tox
+ames_model
